@@ -1,12 +1,6 @@
 ---@type MappingsTable
 local M = {}
 
-M.general = {
-  n = {
-    -- [";"] = { ":", "enter command mode", opts = { nowait = true } },
-  },
-}
-
 M.custom = {
   n = {
     ["<C-p>"] = {":Telescope find_files<CR>", "Find Files"},

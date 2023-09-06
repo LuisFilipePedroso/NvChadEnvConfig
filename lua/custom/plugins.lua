@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -47,6 +47,29 @@ local plugins = {
     end,
   },
 
+  {
+    "editorconfig/editorconfig-vim",
+  },
+
+  {
+    "yuttie/comfortable-motion.vim",
+    lazy = true,
+  },
+
+  {
+    "tpope/vim-sleuth",
+    lazy = true,
+  },
+
+  {
+    "maxmellon/vim-jsx-pretty",
+    lazy = true,
+  },
+
+  {
+    "https://github.com/jparise/vim-graphql",
+    lazy = true,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
